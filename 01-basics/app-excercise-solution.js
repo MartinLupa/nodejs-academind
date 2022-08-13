@@ -33,7 +33,7 @@ const server = http.createServer((req, res) => {
     req.on("end", () => {
       const parsedBody = Buffer.concat(body).toString();
       console.log(parsedBody.split("=")[1]); // username=whatever-the-user-entered
-      fs.writeFileSync("user.txt", parsedBody, (err) => {
+      fs.writeFile("user.txt", parsedBody, (err) => {
         res.statusCode = 302;
         res.setHeader("Location", "/");
         return res.end();
