@@ -1,0 +1,16 @@
+{
+  "name": "01-basics",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-basics-assignment.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon 01-basics-assignment.js"
+  },
+  "keywords": [],
+  "author": "Martín Lupa",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
