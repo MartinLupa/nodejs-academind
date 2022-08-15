@@ -10,10 +10,9 @@ router.get("/add-product", (req, res, next) => {
   res.sendFile(templatePath);
 });
 
-router.post("/product", (req, res, next) => {
-  const product = req.body.product;
-  console.log(product);
-  res.send(`<ul><li>${product}</li></ul>`);
+router.post("/add-product", (req, res, next) => {
+  console.log(req.body);
+  res.redirect("/");
 });
 
 module.exports = router;
